@@ -1,9 +1,3 @@
-/// <reference path="./index.ts" />
-/// <reference types="body-parser" />
-/// <reference types="cookie-parser" />
-/// <reference types="cors" />
-/// <reference types="express" />
-
 import { Express, Router } from "express";
 
 /**
