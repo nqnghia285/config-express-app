@@ -1,6 +1,6 @@
 {
     "name": "config-express-app",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "dist/index.js",
     "repository": "https://github.com/nqnghia285/config-express-app.git",
     "author": "nghia <nqnghia285@gmail.com>",
@@ -14,7 +14,16 @@
         "postversion": "git push && git push --tags",
         "git": "git add -A && git commit -m \"Setup Package\" && git push"
     },
-    "dependencies": {
+    "homepage": "https://github.com/nqnghia285/config-express-app.git#readme",
+    "keywords": [
+        "config-express-app",
+        "setup",
+        "route"
+    ],
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
         "@types/body-parser": "^1.19.0",
         "@types/cookie-parser": "^1.4.2",
         "@types/cors": "^2.8.10",
@@ -24,14 +33,5 @@
         "cors": "^2.8.5",
         "express": "^4.17.1",
         "path": "^0.12.7"
-    },
-    "homepage": "https://github.com/nqnghia285/config-express-app.git#readme",
-    "keywords": [
-        "config-express-app",
-        "setup",
-        "route"
-    ],
-    "files": [
-        "dist"
-    ]
+    }
 }
