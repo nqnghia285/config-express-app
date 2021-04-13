@@ -6,7 +6,7 @@ import { Express, Router } from "express";
  * @param dirname
  * @param origin
  */
-export function setup(app: Express, dirname: string, origin: string): void;
+export declare function setup(app: Express, dirname: string, origin: string): void;
 
 /**
  * @method route
@@ -14,4 +14,4 @@ export function setup(app: Express, dirname: string, origin: string): void;
  * @param path
  * @param route
  */
-export function route(app: Express, path: string, route: Router): void;
+export declare function route(app: Express, path: string, route: Router): void;
