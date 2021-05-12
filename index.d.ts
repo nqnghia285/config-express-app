@@ -8,7 +8,7 @@ import { Express, Router } from "express";
  * @param config object: Configure cors for your web server
  * @param parser boolean: If true configure accept json, parse body and cookie to json object, ortherwise false
  */
-export function setup(app: Express, staticDir: { dirname: string; publicDir: string }, origin: string, config: object | undefined, parser: boolean): void;
+export declare function setup(app: Express, staticDir: { dirname: string; publicDir: string }, origin: string, config: object | undefined, parser: boolean): void;
 
 /**
  * @method route Set root route
@@ -16,4 +16,4 @@ export function setup(app: Express, staticDir: { dirname: string; publicDir: str
  * @param path string: Path of root route
  * @param route Router instance
  */
-export function route(app: Express, path: string, route: Router): void;
+export declare function route(app: Express, path: string, route: Router): void;
