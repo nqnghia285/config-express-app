@@ -4,8 +4,8 @@ Config Express App help us setup basic express app
 
 ### Functions:
 
-```javascript
-    /**
+```typescript
+/**
  * @method setup Setup Express App
  * @param app Express instance
  * @param staticDir object { dirname: string; publicDir: string }: dirname: current direct, publicDir: Folder name you want to set public folder
@@ -13,22 +13,22 @@ Config Express App help us setup basic express app
  * @param config object: Configure cors for your web server
  * @param parser boolean: If true configure accept json, parse body and cookie to json object, ortherwise false
  */
-function setup(app: Express, staticDir: { dirname: string; publicDir: string }, origin: string, config: object | undefined = undefined, parser: boolean = true): void
+function setup(app: Express, staticDir: { dirname: string; publicDir: string }, origin: string, config: object | undefined = undefined, parser: boolean = true): void;
 ```
 
-```javascript
-    /**
+```typescript
+/**
  * @method route Set root route
  * @param app Express instance
  * @param path string: Path of root route
  * @param route Router instance
  */
-function route(app: Express, path: string, route: Router): void
+function route(app: Express, path: string, route: Router): void;
 ```
 
 ### Example:
 
-```javascript
+```typescript
     // ES6
     import express from "express";
     import RootRoute from "/your-root-route";
