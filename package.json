@@ -1,6 +1,6 @@
 {
     "name": "config-express-app",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "main": "dist/index.js",
     "repository": "https://github.com/nqnghia285/config-express-app.git",
     "author": "nghia <nqnghia285@gmail.com>",
