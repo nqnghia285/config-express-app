@@ -10,10 +10,10 @@ Config Express App help us setup basic express app
  * @param app Express instance
  * @param staticDir object { dirname: string; publicDir: string }: dirname: current direct, publicDir: Folder name you want to set public folder
  * @param origin string: IP address or domain name of origin call api to your web server
- * @param config object: Configure cors for your web server
+ * @param config CorsOptions: Configure cors for your web server
  * @param parser boolean: If true configure accept json, parse body and cookie to json object, ortherwise false
  */
-function setup(app: Express, staticDir: { dirname: string; publicDir: string }, origin: string, config: object | undefined = undefined, parser: boolean = true): void;
+function setup(app: Express, staticDir: { dirname: string; publicDir: string }, origin: string, config: CorsOptions | undefined = undefined, parser: boolean = true): void;
 ```
 
 ```typescript

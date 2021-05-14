@@ -1,7 +1,7 @@
 import { json, urlencoded } from "body-parser";
 import cookieParser from "cookie-parser";
 import express, { Express, Router } from "express";
-import cors from "cors";
+import cors, { CorsOptions } from "cors";
 import path from "path";
 
 /**
@@ -9,10 +9,10 @@ import path from "path";
  * @param app Express instance
  * @param staticDir object { dirname: string; publicDir: string }: dirname: current direct, publicDir: Folder name you want to set public folder
  * @param origin string: IP address or domain name of origin call api to your web server
- * @param config object: Configure cors for your web server
+ * @param config CorsOptions: Configure cors for your web server
  * @param parser boolean: If true configure accept json, parse body and cookie to json object, ortherwise false
  */
-export function setup(app: Express, staticDir: { dirname: string; publicDir: string }, origin: string, config: object | undefined = undefined, parser: boolean = true): void {
+export function setup(app: Express, staticDir: { dirname: string; publicDir: string }, origin: string, config?: CorsOptions, parser: boolean = true): void {
     // Setup Express app
     if (parser) {
         app.use(json());
@@ -26,7 +26,7 @@ export function setup(app: Express, staticDir: { dirname: string; publicDir: str
             allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With", "Origin", "Accept"],
             credentials: true,
             methods: ["GET", "POST", "PUT", "DELETE"],
-            optionSuccessStatus: 200,
+            optionsSuccessStatus: 200,
         };
 
     app.use(cors(config));
